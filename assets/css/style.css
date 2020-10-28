@@ -1,3 +1,17 @@
+/* CSS Development help */
+
 * {
     outline: 1px solid black;
+}
+
+/* Navbar */
+
+@media (max-width: 768px) {
+    .navbar {
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .navbar-menu-sm {
+        background-color: rgba(0,0,0,0.5);
+    }
 }
