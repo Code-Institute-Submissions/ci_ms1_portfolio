@@ -16,8 +16,28 @@
     }
 }
 
+/* Header */
+
+.hero-image-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-height: 65vh;
+    text-align: center;
+}
+
+.hero-image {
+    width: auto;
+    min-height: 432px;
+    max-height: 50vh;
+}
+
+/* Disclaimer */
+
 /* Footer */
 
 .social-link-list {
     list-style-type: none;
 }
+
+/* Landing-Skills */
