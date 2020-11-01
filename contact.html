@@ -23,8 +23,8 @@
         </button>
 		<div class="collapse navbar-collapse" id="navbarMenu">
 			<ul class="navbar-nav">
-				<li class="nav-item ml-auto active">
-					<a class="nav-link" href="#">Home</a>
+				<li class="nav-item ml-auto">
+					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item ml-auto">
 					<a class="nav-link" href="#">Work History</a>
@@ -32,8 +32,8 @@
 				<li class="nav-item ml-auto">
 					<a class="nav-link" href="#">Skillset</a>
 				</li>
-				<li class="nav-item ml-auto">
-					<a class="nav-link" href="contact.html">Contact</a>
+				<li class="nav-item ml-auto active">
+					<a class="nav-link" href="#">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -55,42 +55,48 @@
 </header>
 
 <section class="container-fluid">
-    <div class="row landing-skills">
-        <div class="col">
-            <h5>Real world experience...</h5>
-            <ul>
-                <li>Pharma & Healthcare</li>
-                <li>B2C & B2B business</li>
-                <li>Branch management</li>
-                <li>Quality management</li>
-                <li>Change management</li>
-            </ul>
-        </div>
-        <div class="col">
-            <h5>Working experience...</h5>
-            <ul>
-                <li>Frontend</li>
-                <li>Backend</li>
-                <li>Database</li>
-                <li>DevOps</li>
-            </ul>        
-        </div>
-        <div class="col">
-            <h5>Development process...</h5>
-            <ul>
-                <li>Version control</li>
-                <li>Clean Code</li>
-                <li>Agile</li>
-                <li>TDD</li>
-                <li>XP</li>
-            </ul>        
-        </div>
-    </div>
-    <div class="row landing-skills-details">
-        <div class="col">
-            <a href="#" class="btn btn-block btn-lg btn-primary" id="landing-skills-details-button">Skills in details</a>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col">
+			<form id="contact-form">
+				<h4>Contact me:</h4>
+				<div class="form-item">
+					<legend for="freetext">Message:</legend>
+					<textarea type="text" required id="freetext" placeholder="Message text" name="message"></textarea>
+				</div>
+				<div class="form-item">
+					<legend for="fname">First name:</legend>
+					<input type="text" required id="fname" value="First name" name="fname">
+                </div>
+                <div class="form-item">
+                    <legend for="lname">Last name:</legend>
+                    <input type="text" required id="lname" value="Last name" name="lname">
+                </div>
+                <div class="form-item">
+                    <legend for="email">E-Mail:</legend>
+                    <input type="email" required id="email" value="Email" name="email">
+                </div>
+                <div class="form-item">
+                    <legend for="email">Phone:</legend>
+                    <input type="tel" id="telno" value="Phone" name="telno">
+                </div>
+				<div class="form-item">
+					<input type="checkbox" id="urgency" name="urgency">
+                    <legend for="urgency">Please call me as fast as possible.</legend>
+                </div>
+				<div class="form-item">
+					<button type="button" class="btn btn-block btn-lg" data-toggle="modal" data-target="#edu-modal">Submit</button>
+                </div>
+			</form>
+            <div id="edu-modal" class="modal fade modal-dialog" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <p>Sorry, the website is for educational purposes right now and the contact form doesn't submit your data. No data was saved, nor submitted.</p>
+                        <button type="button" class="btn btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
 </section>
 
 <section class="container-fluid" id="disclaimer">
