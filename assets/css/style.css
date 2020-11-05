@@ -1,35 +1,71 @@
 /* CSS Development help */
 
-* {
+/** {
     outline: 1px solid black;
+}*/
+
+
+/* Meta */
+
+body {
+  color: #232534;
+  background-color: #e8f4fd;
 }
 
 /* Navbar */
 
-@media (max-width: 768px) {
-    .navbar {
-        text-align: right;
-        justify-content: flex-end;
-    }
-    .navbar-menu-sm {
-        background-color: rgba(0,0,0,0.5);
-    }
+.nav-link {
+    color: #232534;
+    background-color: rgba(242,245,248, 0.8)
+}
+
+.navbar-toggler {
+    border: 1px solid #232534;
+}
+
+.navbar-menu-sm {
+    border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+  body {
+    padding-top: 55px;
+  }
+
+  .navbar {
+    border-bottom: 1px solid #232534;
+    color: #232534;
+}
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .navbar-menu-sm * {
+    background-color: #e3f1fc;
+  }
+
+  .show {
+      background-color: #e3f1fc;
+  }
 }
 
 /* Header */
 
 .hero-image-wrap {
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    max-height: 65vh;
-    text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  text-align: center;
 }
 
 .hero-image {
-    width: auto;
-    min-height: 432px;
-    max-height: 50vh;
+  width: auto;
+  min-height: 432px;
+  max-height: 50vh;
 }
 
 /* Disclaimer */
@@ -40,4 +76,83 @@
     list-style-type: none;
 }
 
+.footer-element .btn {
+    color: #e8f4fd;
+    background-color: #304b87;
+}
+
+.footer-element .btn:hover {
+    background-color: #232534;
+}
+
+.social-link-list li i {
+    color: #304b87;
+}
+
+.social-link-list li i:hover {
+    color: #232534;
+}
+
+/* Work History */
+
+.history-work,
+.history-edu {
+    padding: 0;
+}
+
+.history-heading {
+    text-align: center;
+    padding: 15px;
+}
+
+.history-work-item {
+    margin: 10px;
+    border: solid 1px #232534;
+    border-radius: 10px;
+    background-color: #fafaff;
+}
+
+.history-edu-item {
+    margin: 10px;
+    border: solid 1px #232534;
+    border-radius: 10px;
+    background-color: #fafaff;
+}
+
+.history-item-head,
+.history-item-detail {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.history-item-title {
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+.history-item-date {
+    font-size: 1.2em;
+}
+
+.history-item-location {
+    font-size: 1em;
+}
+
+.history-item-detail {
+    margin-top: 5px;
+}
+
+.history-item-detail ul {
+    list-style-type: circle;
+}
+
+
 /* Landing-Skills */
+
+/* Contact Form */
+
+#edu-modal {
+    justify-content: center;
+    position: fixed;
+}
