@@ -12,6 +12,12 @@ body {
   background-color: #e8f4fd;
 }
 
+section,
+footer {
+    max-width: 1440px;
+    margin: auto;
+}
+
 /* Navbar */
 
 .nav-link {
@@ -53,19 +59,30 @@ body {
 }
 
 /* Header */
+header .row {
+    background-color: #304b87;
+    margin: 0 10px 0 10px;
+}
 
 .hero-image-wrap {
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  max-height: 65vh;
-  text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    max-height: 50vh;
 }
 
 .hero-image {
-  width: auto;
-  min-height: 432px;
-  max-height: 50vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    left: 5%;
+
+    /*max-height: 40vh;*/
+    clip-path: circle(50% at center) stroke-box;
+}
+
+.title {
+    color: #fafaff;
 }
 
 /* Disclaimer */
@@ -91,6 +108,17 @@ body {
 
 .social-link-list li i:hover {
     color: #232534;
+}
+
+/* Landing */
+
+.landing-skills-details .btn {
+    color: #e8f4fd;
+    background-color: #304b87;
+}
+
+.landing-skills-details .btn:hover {
+    background-color: #232534;
 }
 
 /* Work History */
