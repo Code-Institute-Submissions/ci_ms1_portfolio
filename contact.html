@@ -56,42 +56,44 @@
 
 <section class="container-fluid">
 	<div class="row">
-		<div class="col">
+		<div class="col contact-form-wrapper">
 			<form id="contact-form">
-				<h4>Contact me:</h4>
-				<div class="form-item">
-					<legend for="freetext">Message:</legend>
-					<textarea type="text" required id="freetext" placeholder="Message text" name="message"></textarea>
+				<h3>Contact me</h3>
+				<div class="form-item form-item-text">
+					<label for="freetext">Your message for me</label>
+					<textarea type="text" rows="6" required id="freetext" placeholder="Your message for me" name="message"></textarea>
 				</div>
+                <div class="form-item-contact-infos">
+				    <div class="form-item">
+					    <label for="fname">First name</label>
+                        <input type="text" required id="fname" value="First name" name="fname">
+                    </div>
+                    <div class="form-item">
+                        <label for="lname">Last name</label>
+                        <input type="text" required id="lname" value="Last name" name="lname">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">E-Mail</label>
+                        <input type="email" required id="email" value="Email" name="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="telno">Phone</label>
+                        <input type="tel" id="telno" value="Phone" name="telno">
+                    </div>
+				    <div class="form-item">
+					    <input type="checkbox" id="urgency-checkbox" name="urgency">
+                        <label for="urgency-checkbox">Please call me as soon as possible.</label>
+                    </div>
+			    </div>
 				<div class="form-item">
-					<legend for="fname">First name:</legend>
-					<input type="text" required id="fname" value="First name" name="fname">
-                </div>
-                <div class="form-item">
-                    <legend for="lname">Last name:</legend>
-                    <input type="text" required id="lname" value="Last name" name="lname">
-                </div>
-                <div class="form-item">
-                    <legend for="email">E-Mail:</legend>
-                    <input type="email" required id="email" value="Email" name="email">
-                </div>
-                <div class="form-item">
-                    <legend for="email">Phone:</legend>
-                    <input type="tel" id="telno" value="Phone" name="telno">
-                </div>
-				<div class="form-item">
-					<input type="checkbox" id="urgency" name="urgency">
-                    <legend for="urgency">Please call me as fast as possible.</legend>
-                </div>
-				<div class="form-item">
-					<button type="button" class="btn btn-block btn-lg" data-toggle="modal" data-target="#edu-modal">Submit</button>
+					<button type="button" class="btn btn-block btn-lg submit-button" data-toggle="modal" data-target="#edu-modal">Submit</button>
                 </div>
 			</form>
             <div id="edu-modal" class="modal fade modal-dialog" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <p>Sorry, the website is for educational purposes right now and the contact form doesn't submit your data. No data was saved, nor submitted.</p>
-                        <button type="button" class="btn btn-block" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

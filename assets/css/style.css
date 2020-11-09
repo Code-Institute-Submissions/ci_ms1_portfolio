@@ -191,8 +191,71 @@ h3 {
 
 
 /* Contact Form */
+.contact-form-wrapper {
+    justify-content: center;
+
+    margin: 20px;
+    border: solid 1px #232534;
+    border-radius: 10px;
+    background-color: #fafaff;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 90%;
+    margin: auto;
+
+}
+
+.form-item-text {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item-contact-infos {
+    max-width: 85%;
+}
+
+.form-item-contact-infos .form-item {
+    margin: auto;
+    text-align: right;
+}
+
+label {
+    margin-left: 10px;    
+}
+
+.submit-button {
+    color: #e8f4fd;
+    background-color: #304b87;
+    margin-bottom: 5px;
+}
+
+.submit-button:hover {
+    color: #e8f4fd;
+    background-color: #232534;
+}
 
 #edu-modal {
-    justify-content: center;
-    position: fixed;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#edu-modal button {
+    color: #e8f4fd;
+    background-color: #304b87;
+    margin: 10px;
+    justify-self: center;
+}
+
+#edu-modal button:hover {
+    color: #e8f4fd;
+    background-color: #232534;
 }
