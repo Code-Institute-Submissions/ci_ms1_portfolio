@@ -1,10 +1,3 @@
-/* CSS Development help */
-
-/** {
-    outline: 1px solid black;
-}*/
-
-
 /* Meta */
 
 body {
@@ -77,7 +70,6 @@ header .row {
     
     left: 5%;
 
-    /*max-height: 40vh;*/
     clip-path: circle(50% at center) stroke-box;
 }
 
@@ -112,13 +104,33 @@ header .row {
 
 /* Landing */
 
-.landing-skills-details .btn {
-    color: #e8f4fd;
-    background-color: #304b87;
+ul {
+    list-style-type: circle;
 }
 
+h3 {
+    text-align: center;
+}
+
+.landing-skills-details .btn,
+.project-link-button {
+    color: #e8f4fd;
+    background-color: #304b87;
+    margin-bottom: 5px;
+}
+
+.project-link-button:hover,
 .landing-skills-details .btn:hover {
+    color: #e8f4fd;
     background-color: #232534;
+}
+
+.landing-skills-group,
+.portfolio-project {
+    margin: 10px;
+    border: solid 1px #232534;
+    border-radius: 10px;
+    background-color: #fafaff;
 }
 
 /* Work History */
@@ -176,7 +188,7 @@ header .row {
 }
 
 
-/* Landing-Skills */
+
 
 /* Contact Form */
 
