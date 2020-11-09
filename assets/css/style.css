@@ -52,7 +52,8 @@ footer {
 }
 
 /* Header */
-header .row {
+
+header {
     background-color: #304b87;
     margin: 0 10px 0 10px;
 }
@@ -65,8 +66,9 @@ header .row {
 
 .hero-image {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    max-height: 100%;
     
     left: 5%;
 
@@ -110,6 +112,10 @@ ul {
 
 h3 {
     text-align: center;
+}
+
+.portfolio-project {
+    min-width: 300px;
 }
 
 .landing-skills-details .btn,
@@ -187,6 +193,35 @@ h3 {
     list-style-type: circle;
 }
 
+/* Skillset */
+
+.skillset-group {
+    margin: 10px;
+    border: solid 1px #232534;
+    border-radius: 10px;
+    background-color: #fafaff;
+    min-width: 300px;
+}
+
+.skillset-group ul {
+    list-style-type: none;
+}
+
+.skillset-group h4 {
+    margin-top: 10px;
+}
+
+.skillset-tech-subgroup .progress {
+    border: 1px solid #232534;
+    color: #232534;
+    background-color: #fafaff; 
+}
+
+.skillset-tech-subgroup .progress .progress-bar{
+    border: 1px solid #232534;
+    color: #fafaff;
+    background-color: #232534; 
+}
 
 
 
