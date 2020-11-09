@@ -56,9 +56,9 @@
 
 <section class="container-fluid">
     <div class="row landing-skills">
-        <div class="col">
-            <h5>Real world experience...</h5>
-            <ul>
+        <div class="col landing-skills-group">
+            <h5 class="landing-skills-group-heading">Real world experience...</h5>
+            <ul class="landing-skills-group-list">
                 <li>Pharma & Healthcare</li>
                 <li>B2C & B2B business</li>
                 <li>Branch management</li>
@@ -66,29 +66,66 @@
                 <li>Change management</li>
             </ul>
         </div>
-        <div class="col">
-            <h5>Working experience...</h5>
-            <ul>
+        <div class="col landing-skills-group">
+            <h5 class="landing-skills-group-heading">Working experience...</h5>
+            <ul class="landing-skills-group-list">
                 <li>Frontend</li>
                 <li>Backend</li>
                 <li>Database</li>
                 <li>DevOps</li>
             </ul>        
         </div>
-        <div class="col">
-            <h5>Development process...</h5>
-            <ul>
+        <div class="col landing-skills-group">
+            <h5 class="landing-skills-group-heading">Development process...</h5>
+            <ul class="landing-skills-group-list">
                 <li>Version control</li>
                 <li>Clean Code</li>
-                <li>Agile</li>
+                <li>Agile (XP, Scrum, Kanban)</li>
                 <li>TDD</li>
-                <li>XP</li>
             </ul>        
         </div>
     </div>
     <div class="row landing-skills-details">
         <div class="col">
             <a href="skillset.html" class="btn btn-block btn-lg btn-primary" id="landing-skills-details-button">Skills in details</a>
+        </div>
+    </div>
+    <h3>Portfolio Showcase</h3>
+    <div class="row portfolio-project-wrapper">
+        <div class="col portfolio-project">
+            <h5 class="project-heading">Data Aggregator for pharmacies on stand-by duty</h5>
+            <ul class="project-tech-list">
+                <li>Bootstrap, jQuery, D3</li>
+                <li>lxml, pandas, Flask</li>
+                <li>MongoDB, Heroku</li>
+            </ul>
+            <p class="project-short">The overall idea of the project is to aggregate data for the customers, so they can comprehend their own values to others.
+            <br>
+            This is a dummy to showcase the overall idea of the feature.</p>
+            <a href="#" class="btn btn-block project-link-button" target="_blank">Details</a>
+        </div>
+        <div class="col portfolio-project">
+            <h5 class="project-heading">Scraping webshops</h5>
+            <ul class="project-tech-list">
+                <li>Bootstrap, jQuery, D3</li>
+                <li>Scrapy, Splash, pandas</li>
+                <li>Postgres, Docker, Heroku</li>
+            </ul>
+            <p class="project-short">The overall idea of the project is to compare special features of different webshops.
+            <br>
+            This is a dummy to showcase the overall idea of the feature.</p>
+            <a href="#" class="btn btn-block project-link-button" target="_blank">Details</a>
+        </div>
+        <div class="col portfolio-project">
+            <h5 class="project-heading">API implementation</h5>
+            <ul class="project-tech-list">
+                <li>aiohttp, lxml, sql-alchemy</li>
+                <li>Postgres, Docker</li>
+            </ul>
+            <p class="project-short">A RESTful-API receiving data to make it accessible for further processing.  
+            <br>
+            This is a dummy to showcase the overall idea of the feature.</p>
+            <a href="#" class="btn btn-block project-link-button" target="_blank">Details</a>
         </div>
     </div>
 </section>
