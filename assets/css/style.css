@@ -195,19 +195,30 @@ h3 {
 
 /* Skillset */
 
-.skillset-group {
+.skillset-backend,
+.skillset-frontend {
+    padding: 0;
+}
+
+.skillset-heading {
+    text-align: center;
+    padding: 15px;
+}
+
+.skillset-tech-subgroup {
     margin: 10px;
+    padding: 10px 20px;
     border: solid 1px #232534;
     border-radius: 10px;
     background-color: #fafaff;
     min-width: 300px;
 }
 
-.skillset-group ul {
+.skillset ul {
     list-style-type: none;
 }
 
-.skillset-group h4 {
+.skillset h4 {
     margin-top: 10px;
 }
 
