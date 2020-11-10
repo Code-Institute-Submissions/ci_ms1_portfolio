@@ -110,8 +110,10 @@ ul {
     list-style-type: circle;
 }
 
-h3 {
+.experiences-heading,
+.portfolio-heading {
     text-align: center;
+    padding: 15px;
 }
 
 .portfolio-project {
