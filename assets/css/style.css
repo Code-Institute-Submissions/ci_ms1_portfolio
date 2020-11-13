@@ -37,26 +37,22 @@ footer {
     border: 1px solid #232534;
 }
 
-.navbar-menu-sm {
-    border-radius: 5px;
-}
-
 @media (min-width: 576px) {
-  body {
-    padding-top: 55px;
+    body {
+        padding-top: 55px;
   }
 }
 
 @media (max-width: 575px) {
-  .navbar {
-    text-align: right;
-    justify-content: flex-end;
-  }
-  
-  .nav-item {
-      width: 100%;
-      text-align: center;
-  }
+    .navbar {
+        text-align: right;
+        justify-content: flex-end;
+    }
+    
+    .nav-item {
+        width: 110%;
+        text-align: center;
+    }
 }
 
 /* Header */
@@ -85,6 +81,8 @@ header {
 
 .title {
     color: #fafaff;
+    align-self: flex-end;
+    margin-bottom: 10px;
 }
 
 /* Disclaimer */
@@ -264,7 +262,7 @@ ul {
 .skillset-tech-subgroup .progress .progress-bar{
     border: 1px solid #232534;
     color: #fafaff;
-    background-color: #232534; 
+    background-color: #304b87; 
 }
 
 
@@ -272,11 +270,7 @@ ul {
 /* Contact Form */
 .contact-form-wrapper {
     justify-content: center;
-
     margin: 20px;
-    border: solid 1px #232534;
-    border-radius: 10px;
-    background-color: #fafaff;
 }
 
 #contact-form {
@@ -285,12 +279,12 @@ ul {
     align-items: center;   
     width: 90%;
     margin: auto;
-
 }
 
 .form-item-text {
     width: 85%;
     margin: auto;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -305,13 +299,13 @@ ul {
 }
 
 label {
-    margin-left: 10px;    
+    margin-left: 10px;  
 }
 
 .submit-button {
     color: #e8f4fd;
     background-color: #304b87;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .submit-button:hover {
