@@ -15,10 +15,25 @@ footer {
 
 .nav-link {
     color: #232534;
-    background-color: rgba(242,245,248, 0.8)
+    background-color: #fafaff;
+    border: 1px solid #232534;
+    border-radius: 5px;
+}
+
+.navbar-nav .active .nav-link {
+    color: #fafaff;
+    background-color: #304b87;
+}
+
+.nav-link:hover,
+.navbar-toggler:hover {
+    color: #e8f4fd;
+    background-color: #232534;
 }
 
 .navbar-toggler {
+    color: #232534;
+    background-color: #fafaff;
     border: 1px solid #232534;
 }
 
@@ -30,11 +45,6 @@ footer {
   body {
     padding-top: 55px;
   }
-
-  .navbar {
-    border-bottom: 1px solid #232534;
-    color: #232534;
-}
 }
 
 @media (max-width: 575px) {
@@ -42,12 +52,10 @@ footer {
     text-align: right;
     justify-content: flex-end;
   }
-  .navbar-menu-sm * {
-    background-color: #e3f1fc;
-  }
-
-  .show {
-      background-color: #e3f1fc;
+  
+  .nav-item {
+      width: 100%;
+      text-align: center;
   }
 }
 
@@ -81,7 +89,19 @@ header {
 
 /* Disclaimer */
 
+#disclaimer {
+    text-align: center;
+}
+
 /* Footer */
+
+.footer-element {
+    text-align: center;
+}
+
+.copyright {
+    align-self: center;
+}
 
 .social-link-list {
     list-style-type: none;
@@ -98,6 +118,7 @@ header {
 
 .social-link-list li i {
     color: #304b87;
+    font-size: 1.5em;
 }
 
 .social-link-list li i:hover {
@@ -116,6 +137,11 @@ ul {
     padding: 15px;
 }
 
+.landing-skills-details div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .portfolio-project {
     min-width: 300px;
 }
@@ -124,13 +150,18 @@ ul {
 .project-link-button {
     color: #e8f4fd;
     background-color: #304b87;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .project-link-button:hover,
 .landing-skills-details .btn:hover {
     color: #e8f4fd;
     background-color: #232534;
+}
+
+.landing-skills-group-heading,
+.project-heading {
+    margin-top: 10px;
 }
 
 .landing-skills-group,
