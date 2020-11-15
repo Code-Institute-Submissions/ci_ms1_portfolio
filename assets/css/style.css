@@ -17,7 +17,7 @@ footer {
     color: #232534;
     background-color: #fafaff;
     border: 1px solid #232534;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .navbar-nav .active .nav-link {
@@ -171,7 +171,7 @@ ul {
 .portfolio-project {
     margin: 10px;
     border: solid 1px #232534;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: #fafaff;
 }
 
@@ -187,17 +187,11 @@ ul {
     padding: 15px;
 }
 
-.history-work-item {
-    margin: 10px;
-    border: solid 1px #232534;
-    border-radius: 10px;
-    background-color: #fafaff;
-}
-
+.history-work-item,
 .history-edu-item {
     margin: 10px;
     border: solid 1px #232534;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: #fafaff;
 }
 
@@ -245,7 +239,7 @@ ul {
     margin: 10px;
     padding: 10px 20px;
     border: solid 1px #232534;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: #fafaff;
     min-width: 300px;
 }
