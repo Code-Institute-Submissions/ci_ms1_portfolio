@@ -111,6 +111,7 @@ header {
 
 #disclaimer {
     text-align: center;
+    margin-top: 20px;
 }
 
 #disclaimer p {
@@ -118,6 +119,11 @@ header {
 }
 
 /* Footer */
+
+footer {
+    border-top: 0.5px solid #ccc;
+    justify-content: center;
+}
 
 .footer-element {
     text-align: center;
