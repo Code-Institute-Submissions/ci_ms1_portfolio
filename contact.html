@@ -7,6 +7,9 @@
 
 <meta name="Description" content="Tobias Kast - Full-Stack Developer, Pharmacist, MBA - online resume for educational purposes"/>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -59,32 +62,32 @@
 		<div class="col contact-form-wrapper">
 			<form id="contact-form">
 				<h3>Contact me</h3>
-				<div class="form-item form-item-text">
-					<label for="freetext">Your message for me</label>
-					<textarea type="text" rows="6" required id="freetext" placeholder="Your message for me" name="message"></textarea>
-				</div>
                 <div class="form-item-contact-infos">
 				    <div class="form-item">
-					    <label for="fname">First name</label>
-                        <input type="text" required id="fname" value="First name" name="fname">
+					    <label for="fname">First name (required)</label>
+                        <input type="text" required id="fname" placeholder="First name" name="fname">
                     </div>
                     <div class="form-item">
-                        <label for="lname">Last name</label>
-                        <input type="text" required id="lname" value="Last name" name="lname">
+                        <label for="lname">Last name (required)</label>
+                        <input type="text" required id="lname" placeholder="Last name" name="lname">
                     </div>
                     <div class="form-item">
-                        <label for="email">E-Mail</label>
-                        <input type="email" required id="email" value="Email" name="email">
+                        <label for="email">E-Mail (required)</label>
+                        <input type="email" required id="email" placeholder="Email" name="email">
                     </div>
                     <div class="form-item">
                         <label for="telno">Phone</label>
-                        <input type="tel" id="telno" value="Phone, just numbers" name="telno" pattern="[0-9]*">
+                        <input type="tel" id="telno" placeholder="Phone, just numbers" name="telno" pattern="[0-9]*">
                     </div>
-				    <div class="form-item">
+				    <div class="form-item form-item-urgent">
 					    <input type="checkbox" id="urgency-checkbox" name="urgency">
-                        <label for="urgency-checkbox">Please call me as soon as possible.</label>
+                        <label for="urgency-checkbox">Please call me as soon as possible (Phone required)</label>
                     </div>
 			    </div>
+				<div class="form-item form-item-text">
+					<label for="freetext">Your message for me (required)</label>
+					<textarea type="text" rows="6" required id="freetext" placeholder="Your message for me" name="message"></textarea>
+				</div>
 				<div class="form-item">
 					<button type="button" class="btn btn-block btn-lg submit-button" data-toggle="modal" data-target="#edu-modal">Submit</button>
                 </div>
