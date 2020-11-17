@@ -243,10 +243,10 @@ ul {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    margin: 10px 0;
 }
 
 .history-item-title {
-    margin-top: 5px;
     font-size: 2em;
 }
 
@@ -256,10 +256,6 @@ ul {
 
 .history-item-location {
     font-size: 1em;
-}
-
-.history-item-detail {
-    margin-top: 5px;
 }
 
 /* Skillset */
