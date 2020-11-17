@@ -7,8 +7,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-section,
-footer {
+section {
     max-width: 1440px;
     margin: auto;
 }
@@ -29,7 +28,7 @@ footer {
 
 .nav-link:hover,
 .navbar-toggler:hover {
-    color: #e8f4fd;
+    color: #fafaff;
     background-color: #232534;
 }
 
@@ -38,25 +37,41 @@ footer {
     background-color: #fafaff;
     border: 1px solid #232534;
 }
+.navbar {
+    text-align: right;
+    justify-content: flex-end;
+}
+    
+.nav-item {
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.nav-item .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 @media (min-width: 576px) {
     body {
         padding-top: 55px;
-  }
-}
-
-@media (max-width: 575px) {
-    .navbar {
-        text-align: right;
-        justify-content: flex-end;
     }
-    
+
+    .navbar {
+        text-align: left;
+        justify-content: flex-start;
+        background-color: #e8f4fd;
+        border-bottom: 0.5px solid #ccc;
+    }
+
     .nav-item {
         width: 100%;
         text-align: center;
+        padding-left: 10px;
     }
 
-    .nav-item .nav-link {
+    .nav-link {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -181,7 +196,6 @@ ul {
 .landing-skills-details .btn:hover {
     color: #e8f4fd;
     background-color: #232534;
-    margin: 5px;
 }
 
 .landing-skills-group-heading,
