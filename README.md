@@ -1,45 +1,160 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# MS1 – Tobias Kast Portfolio / Resume Website
 
-Welcome USER_NAME,
+![Am I responsive screenshot](/readme_assets/Am_I_Responsive.jpg)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+[The website](https://apometricstk.github.io/ci_ms1_portfolio/index.html) is intended to give recruiters and potential employers a fast and conclusive overview of my skills, experiences and qualifications.
+As it is for educational purposes right now, not every skill is in mentioned state (e.g. "dummy content").
 
-## Gitpod Reminders
+---
+ 
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+As a…
 
-`python3 -m http.server`
+#### recruiter…
 
-A blue button should appear to click: *Make Public*,
+* I want to have a **fast** and **openly available** source of information on candidates to assess, so that I can make a quick screening and don’t waste my time and money on candidates not fitting my case. → Homepage
 
-Another blue button should appear to click: *Open Browser*.
+* I want to gather and connect my key information in a **quick first screening** and only dive deeper if the profiles match. → Key Information on landing page, accessible without further click.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* I want to **further assess** a potential candidate before contact. → More relevant Information on the site and connected sites.
 
-A blue button should appear to click: *Make Public*,
+* I want to have a **fast** and **reliable** way to contact candidates on my shortlist, so that my recruitment process is not blocked by timing or contact issues. → Not too many, but reliable contact information, widely-used technology, business-orientation
 
-Another blue button should appear to click: *Open Browser*.
+#### website-owner…
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* I do not want to publicly share my direct contact (phone number) with anyone visiting my homepage. I want to offer a fast and reliable way to contact me. → a contact form, connected with an e-mail alert and business networks
 
-## Updates Since The Instructional Video
+* I do not want a recruiter to misjudge me as a mainly design orientated person. -> Clean and fact orientated layout with some gimmicks (e.g. custom bullet-point)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## ADD THE WIREFRAMES here
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+---
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Features
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Existing Features
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Meta
+- The navigation menu allows every user to have full control over positioning on the homepage (as long as JavaScript is enabled in the browser). On small screens the collapse to a burger-menu saves “dead” screen-space and therefore enhances screen-space usable for information.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- The hero-image with name and title allows every user to remind himself on the person the information he reviews is connected to. It transports a core information to: The person reviewed is not a CS graduate but has working experiences in retail, healthcare, pharma and distributed organizations/branches.
+Assess: dont show hero image on small screens (just show title) for all not-landing pages to enhance active screen-space?
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- The disclaimer reminds users of the educational purpose of the website – some skills were added just to “have something to show” as part of the learning process. The intention is to replace the dummy content with actual skills as soon as the course is finished.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- The footer allows the user to jump to his preferred way of contact – e.g. contact-form, business networks or github.
 
---------
+- The color change of the link-buttons on mouse-over(hover) gives visual feedback to transport the click-ability to the user.
 
-Happy coding!
+### Landing
+- Key information is provided in an easy accessible and structured way.
+
+- Key information for the recruiter: experience-fields (coding, sectors, development) and a link to the tech-skillset for further assessment.
+
+- Key information for the recruiter: portfolio showcase (with tech-shortlist and short description) the external links to projects (dummies right now) provide work samples in detail.
+
+### Work-History
+Provides a classic CV. On wider screens a parallel column for educational and working history was chosen, to emphasize the parallel timelines of full-time work and education.
+
+### Tech skill sets
+Provides a tech-CV-like classification of different technology fields and skill-sets. The subgroups were provided with well-known logos to ease orientation for the viewer.
+
+### Contact
+Provides a contact form to allow users a direct contact. A text field provides space for messages and is with names and e-mail required to allow an answer.
+A checkbox allows an urgent callback-message.
+
+A modal informs about educational purpose of the homepage and that no data has been saved/submitted after “submit”-button has been clicked.
+Note: As the “submit” button does not transmit the input messages, the “required” part of the inputs is not fully functional (just a red border, no mandatory-message). 
+
+### Features left to Implement
+* Build a dynamic timeline for the working history section, to emphasize the ongoing further education parallel to full-time-work by temporal positioning of elements.
+
+* Contact form
+    * Bind contact form to email-service (so the required feature works as intended)
+    * Phone number required if urgency checked
+
+* Add a schedule for occupied / free/bookable time.
+
+---
+
+## Technologies Used
+
+The website is build in a simple way on purpose. The user should not wait for many downloaded media-files or animations. Major CDNs were included (aware of the conflict with the aforementioned statement) to include up-to-date security patches of implemented JavaScript. 
+
+The base technologies are HTML and CSS. Some JavaScript is used to achieve more efficient use of the viewport on mobiles (collapsing navigation-menu).
+
+The hand made “cards” which are used as main design element for the different lists where chosen in preference of Bootstrap cards, as the [documentation (v4.1.x)](https://getbootstrap.com/docs/4.1/components/card/#card-layout) states layout options for series of cards are not yet a responsive element.
+
+#### HTML
+- for the main pages
+
+#### CSS
+- for everything styling related
+
+#### JavaScript
+- just for the Bootstrap nav-collapse feature
+
+#### [Bootstrap](https://getbootstrap.com/)
+- for the grid, the navigation menu, buttons and the contact-form modal
+
+#### [Fontawesome](https://fontawesome.com/)
+- for the logos to ease visual orientation
+
+## ADD GOOGLE FONTS 
+
+#### [gitpod](https://gitpod.io)
+- as IDE
+
+#### [code institute gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template)
+- as a starter for the gitpod environment
+
+#### [code institute readme template](https://github.com/Code-Institute-Solutions/readme-template)
+- as a starter for the readme.md
+
+---
+
+## Testing
+
+## ADD TESTING SECTION
+
+---
+
+## Deployment
+
+The content was deployed via GitHub pages by configuring the repository according to the [documentation](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages).
+Mainly setting the repository on “public” and configuring the “GitHub Pages” section in “settings – Options” of the repository.
+
+For local use just download the code and open the files with your browser. I recommend to start by opening the index.html file.
+
+## Credits
+
+* Screen Size information by [hobo-web – Shaun Anderson](https://www.hobo-web.co.uk/best-screen-size/)
+
+* Browser features by [caniuse.com](https://caniuse.com/)
+
+### Content
+
+* [Bootstrap](https://getbootstrap.com/) components used
+    * Layout system
+    * Navbar
+    * Button
+    * Modal
+
+### Media
+
+* The Font Awesome symbols were made by [Font Awesome](https://fontawesome.com/).
+
+* The hero-image was taken out of private stock.
+
+* The first readme screenshot was taken with [ami.reponsive](http://ami.responsivedesign.is/)
+
+### Acknowledgments
+
+* My mentor Brian Macharia for his support and feedback.
+
+* The Code Institute slack community for their support.
+
+* Inspiration was taken from 
+    * [LouParkers MS1](https://github.com/louparker/iportfolio)
+    * [thaysom22 MS1](https://github.com/thaysom22/portfolio_project)
