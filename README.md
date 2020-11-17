@@ -101,7 +101,8 @@ The hand made “cards” which are used as main design element for the differen
 #### [Fontawesome](https://fontawesome.com/)
 - for the logos to ease visual orientation
 
-## ADD GOOGLE FONTS 
+#### [Google Font *Roboto*](https://fonts.google.com/specimen/Roboto?sidebar.open=true&selection.family=Roboto)
+- Roboto for a clean readable impresion
 
 #### [gitpod](https://gitpod.io)
 - as IDE
