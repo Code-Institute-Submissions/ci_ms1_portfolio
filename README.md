@@ -5,9 +5,19 @@
 [The website](https://apometricstk.github.io/ci_ms1_portfolio/index.html) is intended to give recruiters and potential employers a fast and conclusive overview of my skills, experiences and qualifications.
 As it is for educational purposes right now, not every skill is in mentioned state (e.g. "dummy content").
 
----
+# Table of Contents
+1. [UX](#UX)
+2. [Features](#Features)
+3. [Technologies](#Technologies)
+4. [Testing](#Testing)
+5. [Deployment](#Deployment)
+6. [Credits](#Credits)
  
 ## UX
+
+### Strategy & Scope
+
+A selection of the major objectives and selected ways to achieve them in form of user stories and conclusions.
 
 As a…
 
@@ -17,17 +27,33 @@ As a…
 
 * I want to gather and connect my key information in a **quick first screening** and only dive deeper if the profiles match. → Key Information on landing page, accessible without further click.
 
-* I want to **further assess** a potential candidate before contact. → More relevant Information on the site and connected sites.
+* I want to **further assess** a potential candidate before contact. → More relevant Information on the site and connected sites. Use of known concepts in tech CVs (e.g. progress bars, tech-shortlits)
 
 * I want to have a **fast** and **reliable** way to contact candidates on my shortlist, so that my recruitment process is not blocked by timing or contact issues. → Not too many, but reliable contact information, widely-used technology, business-orientation
 
 #### website-owner…
 
+* I want to get job offers fitting my profile. -> Selection of information to serve, prioritizing the focus bits (e.g. backend before frontend in tech skillsets)
+
 * I do not want to publicly share my direct contact (phone number) with anyone visiting my homepage. I want to offer a fast and reliable way to contact me. → a contact form, connected with an e-mail alert and business networks
 
-* I do not want a recruiter to misjudge me as a mainly design orientated person. -> Clean and fact orientated layout with some gimmicks (e.g. custom bullet-point)
+* I do not want a recruiter to misjudge me as a mainly design orientated person. -> Clean and fact orientated layout with some gimmicks (e.g. custom bullet-point), portfolio projects will set a focus, as soon as available.
 
-## ADD THE WIREFRAMES here
+### Structure & Skeleton
+
+The major design decisions in form of wireframes.
+
+"Burger-Button" / Navbar fixed top to scroll with screen.
+
+![wireframes mobile](/readme_assets/wireframe_mobile.jpg)
+
+![wireframes bigger as mobile](/readme_assets/wireframe_bigger.jpg)
+
+### Surface
+
+As pharma is a "white collar" business sector, I decided to match it with clean and plain colors, font and style.
+
+![color palette](/readme_assets/coolors_palette2.jpg)
 
 ---
 
@@ -76,7 +102,9 @@ Note: As the “submit” button does not transmit the input messages, the “re
 
 * Add a schedule for occupied / free/bookable time.
 
----
+* Add a "change-language" button and add translated german content.
+
+* Add a "remote-work" or "based at" section, as soon as a preferred way of collaboration is chosen.
 
 ## Technologies Used
 
@@ -113,13 +141,9 @@ The hand made “cards” which are used as main design element for the differen
 #### [code institute readme template](https://github.com/Code-Institute-Solutions/readme-template)
 - as a starter for the readme.md
 
----
-
 ## Testing
 
 ## ADD TESTING SECTION
-
----
 
 ## Deployment
 
@@ -133,6 +157,8 @@ For local use just download the code and open the files with your browser. I rec
 * Screen Size information by [hobo-web – Shaun Anderson](https://www.hobo-web.co.uk/best-screen-size/)
 
 * Browser features by [caniuse.com](https://caniuse.com/)
+
+* Wireframes drawn with [Draw.io](https://app.diagrams.net/)
 
 ### Content
 
@@ -149,6 +175,8 @@ For local use just download the code and open the files with your browser. I rec
 * The hero-image was taken out of private stock.
 
 * The first readme screenshot was taken with [ami.reponsive](http://ami.responsivedesign.is/)
+
+* The color palette screenshot was taken with [coolors.co](https://coolors.co/)
 
 ### Acknowledgments
 
