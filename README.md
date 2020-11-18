@@ -143,8 +143,6 @@ The hand made “cards” which are used as main design element for the differen
 
 ## Testing
 
-
-
 ### Validators
 Validators were used by copy and pasting the code into the validator.
 Strg+A, Strg+C -> Strg+V
@@ -154,7 +152,7 @@ As the [HTML validator](https://validator.w3.org/) highlights an error...
 * the attribute "type="text" was removed from the textarea of the contact.html.
 
 As validator warns...
-* about a misuse of "aria-label" if used to label non focusable Font-Awesomne icons and the icons just help with visual orientation by representing the corresponding heading, the labels were removed.
+* about a misuse of "aria-label" if used to label non focusable Font-Awesomne icons, and the icons just help with visual orientation by representing the corresponding heading, the labels were removed.
 
 * about a missing heading in disclaimer, a heading was added to the section.
 
@@ -168,6 +166,31 @@ passed without errors or warnings.
 #### CSS Validator
 The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and passed without errors.
 
+### Manual testing
+
+#### Firefox, deployed page
+* All htmls were successfully "tabbed" in circle in desktop and mobile mode to assure keyboard-only usability and focusability of all links.
+
+* All buttons were hovered and clicked to check the effect.
+
+* All html were examined in small mode (340px width) and at major breakpoint (575, 576px). A previously, just sometimes observed bug of the "burger-button" moving to the left side of the screen and the media-query being ignored (Browser and machine independent, but not every-time reproducible) seems to be fixed.
+
+* The inspector just throws an 404 error for the favicon. I dont expect ongoing bookmarking of the site and the title speaks for itself. The research just resulted in [presenting an empty favicon link](https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests). As the objective is not to present myself as a visual designer, the creation of a favicon was declined and doesn't seem to be necessary.
+
+#### Chrome, deployed page
+* The progress bars on the skillset.html seem to be slightly out of bound when observed on a big screen.  
+    ![Chrome1](/readme_assets/chrome1.jpg) ![Chrome2](/readme_assets/chrome2.jpg)  
+    but the problem were not observed on a smartphone or on a laptop with Chromium.
+    ![Chrome3](/readme_assets/chrome3.jpg)  
+    
+    A further test on the laptop exposed an out of bound behaviour on Windows 10 with Chrome, but not on Manjaro with Chromium on the same display.
+    Further investigation with the developer tools, Windows 10 scaling behaviour and zooming with Chrome suggests a dependency of the position of the bar and display-solution, scaling and zooming if the bug appears or not at all. Further investigation or trying to fix this minor issue was declined.  
+    ![Chrome4](/readme_assets/chrome4.jpg)
+
+* All htmls were scaled in viewport width and responsive behaviour was observed. On index.html the grid layout of the first skill group was eased.
+
+### Slack review
+The project was posted to Slack the Code Institute community channel peer-code-review for different pairs of eyes.
 
 ## Deployment
 
