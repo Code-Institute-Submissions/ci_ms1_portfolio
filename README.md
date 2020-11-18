@@ -143,7 +143,31 @@ The hand made “cards” which are used as main design element for the differen
 
 ## Testing
 
-## ADD TESTING SECTION
+
+
+### Validators
+Validators were used by copy and pasting the code into the validator.
+Strg+A, Strg+C -> Strg+V
+
+#### HTML Validator
+As the [HTML validator](https://validator.w3.org/) highlights an error...
+* the attribute "type="text" was removed from the textarea of the contact.html.
+
+As validator warns...
+* about a misuse of "aria-label" if used to label non focusable Font-Awesomne icons and the icons just help with visual orientation by representing the corresponding heading, the labels were removed.
+
+* about a missing heading in disclaimer, a heading was added to the section.
+
+Afterwards
+* index.html
+* work-history.html
+* skillset.html
+* contact.html
+passed without errors or warnings.
+
+#### CSS Validator
+The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and passed without errors.
+
 
 ## Deployment
 
