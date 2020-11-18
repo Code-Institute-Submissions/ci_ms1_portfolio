@@ -151,16 +151,17 @@ Strg+A, Strg+C -> Strg+V
 As the [HTML validator](https://validator.w3.org/) highlights an error...
 * the attribute "type="text" was removed from the textarea of the contact.html.
 
-As validator warns...
-* about a misuse of "aria-label" if used to label non focusable Font-Awesomne icons, and the icons just help with visual orientation by representing the corresponding heading, the labels were removed.
+As validator warns about...
+* a misuse of "aria-label" if used to label non focusable Font-Awesomne icons, and the icons just help with visual orientation by representing the corresponding heading, the labels were removed.
 
-* about a missing heading in disclaimer, a heading was added to the section.
+* a missing heading in disclaimer, a heading was added to the section.
 
 Afterwards
 * index.html
 * work-history.html
 * skillset.html
-* contact.html
+* contact.html  
+
 passed without errors or warnings.
 
 #### CSS Validator
@@ -184,13 +185,16 @@ The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-val
     ![Chrome3](/readme_assets/chrome3.jpg)  
     
     A further test on the laptop exposed an out of bound behaviour on Windows 10 with Chrome, but not on Manjaro with Chromium on the same display.
-    Further investigation with the developer tools, Windows 10 scaling behaviour and zooming with Chrome suggests a dependency of the position of the bar and display-solution, scaling and zooming if the bug appears or not at all. Further investigation or trying to fix this minor issue was declined.  
+    Further investigation with the developer tools, Windows 10 scaling behaviour and zooming with Chrome suggests a dependency of the position of the bar and display-solution, scaling and zooming if the bug appears or not at all. Further investigation or trying to fix this minor issue was declined, as the relevance could not be evaluated.  
     ![Chrome4](/readme_assets/chrome4.jpg)
 
 * All htmls were scaled in viewport width and responsive behaviour was observed. On index.html the grid layout of the first skill group was eased.
 
 ### Slack review
 The project was posted to Slack the Code Institute community channel peer-code-review for different pairs of eyes.
+
+### Readme
+Readme was observed on GitHub.
 
 ## Deployment
 
