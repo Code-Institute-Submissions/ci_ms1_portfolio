@@ -174,7 +174,13 @@ The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-val
 
 * All buttons were hovered and clicked to check the effect.
 
-* All html were examined in small mode (340px width) and at major breakpoint (575, 576px). A previously, just sometimes observed bug of the "burger-button" moving to the left side of the screen and the media-query being ignored (Browser and machine independent, but not every-time reproducible) seems to be fixed.
+* All html were examined in small mode (340px width) and at major breakpoint (575, 576px). A previously, just sometimes observed bug of the "burger-button" moving to the left side of the screen and the media-query being ignored (Browser and machine independent, but not every-time reproducible) seems to be fixed. I have worked on the media queries and afterwards the bug did not appear again. For documentation I add the screenshots of the bug observed here.
+![574px](/readme_assets/574px.jpg)  
+![575px](/readme_assets/575px.jpg)
+![576px](/readme_assets/576px.jpg)
+![575px](/readme_assets/575px_altered_querie_width_from_575_to_576.jpg)
+![576px](/readme_assets/576px_altered_querie_width_from_575_to_576.jpg)
+The commit 6c9d6098caef10efd98816a62f11d9a0b60073cd seems to fix the issue by resolving one behaviour to standard and thereby reduce number of media querries and complexity.        
 
 * The inspector just throws an 404 error for the favicon. I dont expect ongoing bookmarking of the site and the title speaks for itself. The research just resulted in [presenting an empty favicon link](https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests). As the objective is not to present myself as a visual designer, the creation of a favicon was declined and doesn't seem to be necessary.
 
@@ -194,7 +200,7 @@ The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-val
 The project was posted to Slack the Code Institute community channel peer-code-review for different pairs of eyes.
 
 ### Readme
-Readme was observed on GitHub.
+Readme was observed on GitHub. All links were clicked.
 
 ## Deployment
 
