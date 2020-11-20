@@ -90,7 +90,8 @@
 					<textarea rows="6" required id="freetext" placeholder="Your message for me" name="message"></textarea>
 				</div>
 				<div class="form-item">
-					<button type="submit" class="btn btn-block btn-lg submit-button" data-toggle="modal" data-target="#edu-modal">Submit</button>
+                    <!--- used type "button" instead of "submit" to open a explaining modal (submit refreshes page); to submit and remove modal, also change type of button to submit -->
+					<button type="button" class="btn btn-block btn-lg submit-button" data-toggle="modal" data-target="#edu-modal">Submit</button>
                 </div>
 			</form>
             <!-- Modal after submit button -->
