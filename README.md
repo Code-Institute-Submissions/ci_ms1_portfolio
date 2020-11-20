@@ -132,6 +132,10 @@ The hand made “cards” which are used as main design element for the differen
 #### [Google Font *Roboto*](https://fonts.google.com/specimen/Roboto?sidebar.open=true&selection.family=Roboto)
 - Roboto for a clean readable impresion
 
+### [GitHub](https://github.com)
+- for version control
+- for deployment
+
 #### [gitpod](https://gitpod.io)
 - as IDE
 
@@ -232,11 +236,31 @@ The project was posted to Slack the Code Institute community channel peer-code-r
 Readme was observed on GitHub. All links were clicked.
 
 ## Deployment
+The relevant files for deployment of the project are
+* index.html
+* work-history.html
+* skillset.html
+* contact.html
+* assets **folder**  
 
-The content was deployed via GitHub pages by configuring the repository according to the [documentation](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages).
-Mainly setting the repository on “public” and configuring the “GitHub Pages” section in “settings – Options” of the repository.
+The easiest way (but not the tiniest in terms of filesize - the download includes the development gitpod files) is to click on "Code" on the top of this page (top right above the file list) and on "Download zip".  
+Afterwards extract the zip (most OS include a packaging program for it, just right click on it) into the required folder (read below).
 
-For local use just download the code and open the files with your browser. I recommend to start by opening the index.html file.
+### Local
+For local use, download the files and the folder, put them (or extract) into the same directory and open the **index.html** file with your browser.
+
+### Deployed / Hosted
+For deployed use, download the files and the folder, put/upload/extract them into the folder advised by your hoster (e.g. "www", but it depends - check back with your hoster / the documentation!).  
+Be cautious not to alter the file hierarchy.
+
+### with GitHub pages
+If you are logged into your GitHub Account (if not: Sign up - its free!) just click on "Fork" on the top right of this page.
+Afterwards in the "Settings" (top menu, right beyond the name of the repository) menu, go to "Options" (top menu item), and afterwards scroll down to "GitHub Pages", select "Master branch" as source and click "Save".
+To get to the deployed site afterwards, click on the link.  
+Further [documentation](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages)
+
+### this actual deployment
+The content was deployed via GitHub pages by configuring the repository according to the above walkthrough.
 
 ## Credits
 
@@ -249,7 +273,7 @@ For local use just download the code and open the files with your browser. I rec
 ### Content
 
 * [Bootstrap](https://getbootstrap.com/) components used
-    * Layout system
+    * Layout system / grid
     * Navbar
     * Button
     * Modal
@@ -262,7 +286,7 @@ For local use just download the code and open the files with your browser. I rec
 
 * The first readme screenshot was taken with [ami.reponsive](http://ami.responsivedesign.is/)
 
-* The color palette screenshot was taken with [coolors.co](https://coolors.co/)
+* The color palette readme screenshot was taken with [coolors.co](https://coolors.co/)
 
 ### Acknowledgments
 
