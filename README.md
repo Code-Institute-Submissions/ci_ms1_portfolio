@@ -23,21 +23,21 @@ As a…
 
 #### recruiter…
 
-* I want to have a **fast** and **openly available** source of information on candidates to assess, so that I can make a quick screening and don’t waste my time and money on candidates not fitting my case. → Homepage
+1. I want to have a **fast** and **openly available** source of information on candidates to assess, so that I can make a quick screening and don’t waste my time and money on candidates not fitting my case. → Homepage
 
-* I want to gather and connect my key information in a **quick first screening** and only dive deeper if the profiles match. → Key Information on landing page, accessible without further click.
+2. I want to gather and connect my key information in a **quick first screening** and only dive deeper if the profiles match. → Key Information on landing page, accessible without further click.
 
-* I want to **further assess** a potential candidate before contact. → More relevant Information on the site and connected sites. Use of known concepts in tech CVs (e.g. progress bars, tech-shortlits)
+3. I want to **further assess** a potential candidate before contact. → More relevant Information on the site and connected sites. Use of known concepts in tech CVs (e.g. progress bars, tech-shortlist)
 
-* I want to have a **fast** and **reliable** way to contact candidates on my shortlist, so that my recruitment process is not blocked by timing or contact issues. → Not too many, but reliable contact information, widely-used technology, business-orientation
+4. I want to have a **fast** and **reliable** way to contact candidates on my shortlist, so that my recruitment process is not blocked by timing or contact issues. → Not too many, but reliable contact information, widely-used technology, business-orientation
 
 #### website-owner…
 
-* I want to get job offers fitting my profile. -> Selection of information to serve, prioritizing the focus bits (e.g. backend before frontend in tech skillsets)
+1. I want to get job offers fitting my profile. → Selection of information to serve, prioritizing the focus bits (e.g. backend before frontend in tech skillsets)
 
-* I do not want to publicly share my direct contact (phone number) with anyone visiting my homepage. I want to offer a fast and reliable way to contact me. → a contact form, connected with an e-mail alert and business networks
+2. I do not want to publicly share my direct contact (phone number) with anyone visiting my homepage. I want to offer a fast and reliable way to contact me. → a contact form, connected with an e-mail alert and business networks
 
-* I do not want a recruiter to misjudge me as a mainly design orientated person. -> Clean and fact orientated layout with some gimmicks (e.g. custom bullet-point), portfolio projects will set a focus, as soon as available.
+3. I do not want a recruiter to misjudge me as a mainly design orientated person. → Clean and fact orientated layout with some gimmicks (e.g. custom bullet-point), portfolio projects will set a focus, as soon as available.
 
 ### Structure & Skeleton
 
@@ -90,8 +90,8 @@ Provides a tech-CV-like classification of different technology fields and skill-
 Provides a contact form to allow users a direct contact. A text field provides space for messages and is with names and e-mail required to allow an answer.
 A checkbox allows an urgent callback-message.
 
-A modal informs about educational purpose of the homepage and that no data has been saved/submitted after “submit”-button has been clicked.
-Note: As the “submit” button does not transmit the input messages, the “required” part of the inputs is not fully functional (just a red border, no mandatory-message). 
+A modal informs about educational purpose of the homepage and that no data has been saved/submitted after “submit”-button has been clicked.  
+Note: As the “submit” button does not transmit the input messages, the “required” part of the inputs is not fully functional (just a red border, no mandatory-popup-message). A "submit" button type will trigger a page reload and thereby hide the explaining modal. Change type from "button" back to "submit" when form transmission is implemented.
 
 ### Features left to Implement
 * Build a dynamic timeline for the working history section, to emphasize the ongoing further education parallel to full-time-work by temporal positioning of elements.
@@ -170,10 +170,6 @@ The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-val
 ### Manual testing
 
 #### Firefox, deployed page
-* All htmls were successfully "tabbed" in circle in desktop and mobile mode to assure keyboard-only usability and focusability of all links.
-
-* All buttons were hovered and clicked to check the effect.
-
 * All html were examined in small mode (340px width) and at major breakpoint (575, 576px). A previously, just sometimes observed bug of the "burger-button" moving to the left side of the screen and the media-query being ignored (Browser and machine independent, but not every-time reproducible) seems to be fixed. I have worked on the media queries and afterwards the bug did not appear again. For documentation I add the screenshots of the bug observed here.
 ![574px](/readme_assets/574px.jpg)  
 ![575px](/readme_assets/575px.jpg)
@@ -195,6 +191,33 @@ The commit 6c9d6098caef10efd98816a62f11d9a0b60073cd seems to fix the issue by re
     ![Chrome4](/readme_assets/chrome4.jpg)
 
 * All htmls were scaled in viewport width and responsive behaviour was observed. On index.html the grid layout of the first skill group was eased.
+
+### Functionality testing
+* All htmls were successfully "tabbed" in circle in desktop and mobile mode to assure keyboard-only usability and focusability of all links.
+
+* All buttons were hovered and clicked to check if the expected effects were observed. 
+
+* All links were followed to check if the target and the expected tab were correct.
+
+* Input fields were tested to validate correctly (issue with button type=submit/button and validation explained under [Features - Contact](#Contact)).
+
+### User-Story verification
+
+#### recruiter
+1. Homepage is available, deployed with github pages. Tested by accessing url.
+
+2. The landing page gives a fast first impression, relevant keywords (e.g. Full-Stack, JavaScript, Python, SQL, Django...) are present, so are examples from the portfolio.
+
+3. Further details are given on click (e.g. Portfolio project detail, skills-section with progress bars on landing, github-link).
+
+4. Links to well known business-networks (LinkedIn, Xing for german-speaking audience) and a contact form (with urgency toggler) were served.
+
+#### website-owner
+1. The homepage was designed clean and plain with few graphical design elements to match the profile. Backend was not proritized on the experience listing by order to prevent irritation of the fast scanning reader, but by selection of portfolio projects. On the skillset site the order and the number of skills prioritize backend before frontend. 
+
+2. The favorite way of contact was implemented as far as possible. Business-network-profiles are linked and a contact form is ready for implementation, with an urgency toggler to ease the missing phone number.
+
+3. A custum bullet point and a reliable/serious range of colors was used to emphasize seriousness and to set the page apart from plain text, but overall a minmalistic visual design approach was used.
 
 ### Slack review
 The project was posted to Slack the Code Institute community channel peer-code-review for different pairs of eyes.
