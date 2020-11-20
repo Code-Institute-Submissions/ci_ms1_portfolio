@@ -168,9 +168,14 @@ passed without errors or warnings.
 The styles.css was validated by [jigsaw validator](https://jigsaw.w3.org/css-validator/validator) and passed without errors.
 
 ### Manual testing
+The Browsers Chrome(v86.0.4240.198) and Firefox (v82.0.3) were used for testing.  
+The deployed version of the page was tested.
 
-#### Firefox, deployed page
-* All html were examined in small mode (340px width) and at major breakpoint (575, 576px). A previously, just sometimes observed bug of the "burger-button" moving to the left side of the screen and the media-query being ignored (Browser and machine independent, but not every-time reproducible) seems to be fixed. I have worked on the media queries and afterwards the bug did not appear again. For documentation I add the screenshots of the bug observed here.
+* All html were examined in small mode (280px, 320px width), at major Bootstrap breakpoint (575, 576; 767, 768; 991, 992; 1199, 1200px) and up to 3000px (as representation for high res displays - 4k, 5k). 
+    * A unnecessary min-width was removed.
+    * max-width of body and navbar was set, to prevent hero-image and navbar to stay left aligned on high-res, while content is centered.
+
+* A previously, just sometimes observed bug of the "burger-button" moving to the left side of the screen and the media-query being ignored (Browser and machine independent, but not every-time reproducible) seems to be fixed. I have worked on the media queries and afterwards the bug did not appear again. For documentation I add the screenshots of the bug observed here.
 ![574px](/readme_assets/574px.jpg)  
 ![575px](/readme_assets/575px.jpg)
 ![576px](/readme_assets/576px.jpg)
@@ -180,17 +185,18 @@ The commit 6c9d6098caef10efd98816a62f11d9a0b60073cd seems to fix the issue by re
 
 * The inspector just throws an 404 error for the favicon. I dont expect ongoing bookmarking of the site and the title speaks for itself. The research just resulted in [presenting an empty favicon link](https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests). As the objective is not to present myself as a visual designer, the creation of a favicon was declined and doesn't seem to be necessary.
 
-#### Chrome, deployed page
+* All htmls were scaled in viewport width and responsive behaviour was observed. On index.html the grid layout of the first skill group was eased.
+
+#### Chrome exclusive, deployed page
 * The progress bars on the skillset.html seem to be slightly out of bound when observed on a big screen.  
     ![Chrome1](/readme_assets/chrome1.jpg) ![Chrome2](/readme_assets/chrome2.jpg)  
     but the problem were not observed on a smartphone or on a laptop with Chromium.
     ![Chrome3](/readme_assets/chrome3.jpg)  
     
-    A further test on the laptop exposed an out of bound behaviour on Windows 10 with Chrome, but not on Manjaro with Chromium on the same display.
-    Further investigation with the developer tools, Windows 10 scaling behaviour and zooming with Chrome suggests a dependency of the position of the bar and display-solution, scaling and zooming if the bug appears or not at all. Further investigation or trying to fix this minor issue was declined, as the relevance could not be evaluated.  
+    A further test on the laptop exposed an out of bound behaviour on Windows 10 with Chrome, but not on Manjaro with Chromium on the same display and resolution.
+    Further investigation with the developer tools, Windows 10 scaling behaviour and zooming with Chrome suggests a dependency of the position of the bar and display-solution, scaling and zooming if the bug appears or not at all.   
+    Further investigation or trying to fix this minor issue was declined, as the relevance could not be evaluated and the effort seemed to be out of scale.  
     ![Chrome4](/readme_assets/chrome4.jpg)
-
-* All htmls were scaled in viewport width and responsive behaviour was observed. On index.html the grid layout of the first skill group was eased.
 
 ### Functionality testing
 * All htmls were successfully "tabbed" in circle in desktop and mobile mode to assure keyboard-only usability and focusability of all links.
