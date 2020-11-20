@@ -258,6 +258,12 @@ ul {
     font-size: 1em;
 }
 
+@media (max-width: 767px) {
+    .history-item-detail ul {
+        padding-left: 0px;
+    }
+}
+
 /* Skillset */
 
 .skillset-backend,
