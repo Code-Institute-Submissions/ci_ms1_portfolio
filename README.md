@@ -1,6 +1,6 @@
 # MS1 – Tobias Kast Portfolio / Resume Website
 
-![Am I responsive screenshot](/readme_assets/am_i_responsive.jpg)
+![Am I responsive screenshot](/readme_assets/am_i_responsive3.jpg)
 
 [The website](https://apometricstk.github.io/ci_ms1_portfolio/index.html) is intended to give recruiters and potential employers a fast and conclusive overview of my skills, experiences and qualifications.
 As it is for educational purposes right now, not every skill is in mentioned state (e.g. "dummy content").
@@ -114,13 +114,13 @@ The base technologies are HTML and CSS. Some JavaScript is used to achieve more 
 
 The hand made “cards” which are used as main design element for the different lists where chosen in preference of Bootstrap cards, as the [documentation (v4.1.x)](https://getbootstrap.com/docs/4.1/components/card/#card-layout) states layout options for series of cards are not yet a responsive element.
 
-#### HTML
+#### [HTML](https://en.wikipedia.org/wiki/HTML)
 - for the main pages
 
-#### CSS
+#### [CSS](https://en.wikipedia.org/wiki/CSS)
 - for everything styling related
 
-#### JavaScript
+#### [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - just for the Bootstrap nav-collapse feature
 
 #### [Bootstrap](https://getbootstrap.com/)
@@ -132,7 +132,7 @@ The hand made “cards” which are used as main design element for the differen
 #### [Google Font *Roboto*](https://fonts.google.com/specimen/Roboto?sidebar.open=true&selection.family=Roboto)
 - Roboto for a clean readable impresion
 
-### [GitHub](https://github.com)
+#### [Git](https://git-scm.com/) / [GitHub](https://github.com)
 - for version control
 - for deployment
 
@@ -214,20 +214,28 @@ The commit 6c9d6098caef10efd98816a62f11d9a0b60073cd seems to fix the issue by re
 ### User-Story verification
 
 #### recruiter
-1. Homepage is available, deployed with github pages. Tested by accessing url.
+1. Homepage is available, deployed with github pages. Tested by accessing url.  
+    See screenshot on begin of the readme.
 
 2. The landing page gives a fast first impression, relevant keywords (e.g. Full-Stack, JavaScript, Python, SQL, Django...) are present, so are examples from the portfolio.
+    ![Landing keywords](/readme_assets/story_r1.jpg)
 
 3. Further details are given on click (e.g. Portfolio project detail, skills-section with progress bars on landing, github-link).
+    ![Skillset progress-bars](/readme_assets/story_r2.jpg)
 
-4. Links to well known business-networks (LinkedIn, Xing for german-speaking audience) and a contact form (with urgency toggler) were served.
+4. Links to well known business-networks (LinkedIn, Xing for german-speaking audience) and a contact form (with urgency toggler) were served.  
+    ![Social links](/readme_assets/story_r3.jpg)
 
 #### website-owner
-1. The homepage was designed clean and plain with few graphical design elements to match the profile. Backend was not proritized on the experience listing by order to prevent irritation of the fast scanning reader, but by selection of portfolio projects. On the skillset site the order and the number of skills prioritize backend before frontend. 
+1. The homepage was designed clean and plain with few graphical design elements to match the profile. Backend was not proritized on the experience listing by order to prevent irritation of the fast scanning reader, but by selection of portfolio projects. On the skillset site the order and the number of skills prioritize backend before frontend.   
+   See screenshots on user stories recruiter 2 and 3.
 
-2. The favorite way of contact was implemented as far as possible. Business-network-profiles are linked and a contact form is ready for implementation, with an urgency toggler to ease the missing phone number.
+2. The favorite way of contact was implemented as far as possible. Business-network-profiles are linked and a contact form is ready for implementation, with an urgency toggler to ease the missing phone number.  
+    ![Contact form](/readme_assets/story_u1.jpg)
 
-3. A custum bullet point and a reliable/serious range of colors was used to emphasize seriousness and to set the page apart from plain text, but overall a minmalistic visual design approach was used.
+3. A custum bullet point and a reliable/serious range of colors was used to emphasize seriousness and to set the page apart from plain text, but overall a minmalistic visual design approach was used.  
+    See range of colors at the end of UX section.      
+    ![Bullet point](/readme_assets/story_u2.jpg)
 
 ### Slack review
 The project was posted to Slack the Code Institute community channel peer-code-review for different pairs of eyes.
