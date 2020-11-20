@@ -1,6 +1,6 @@
 # MS1 – Tobias Kast Portfolio / Resume Website
 
-![Am I responsive screenshot](/readme_assets/Am_I_Responsive.jpg)
+![Am I responsive screenshot](/readme_assets/am_i_responsive.jpg)
 
 [The website](https://apometricstk.github.io/ci_ms1_portfolio/index.html) is intended to give recruiters and potential employers a fast and conclusive overview of my skills, experiences and qualifications.
 As it is for educational purposes right now, not every skill is in mentioned state (e.g. "dummy content").
